@@ -1,0 +1,11 @@
+.board-container{
+    margin-left:600px;
+    width:300px;
+
+}
+
+.board-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
