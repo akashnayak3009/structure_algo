@@ -1,5 +1,6 @@
 import './App.css';
-import Timer from './projects/Timer/Timer';
+import Pagination from './projects/Pagination/Pagination';
+// import Timer from './projects/Timer/Timer';
 // import Weather from './projects/Weather_App/Weather';
 // import { WeatherProvider } from './projects/Weather_App/context/WeatherContext';
 // import TicToe from './projects/TicTacToe/TicToe';
@@ -11,7 +12,8 @@ function App() {
       {/* <WeatherProvider>
         <Weather />
       </WeatherProvider> */}
-      <Timer/>
+      {/* <Timer/> */}
+      <Pagination/>
     </div>
   );
 }
