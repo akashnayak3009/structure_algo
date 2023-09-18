@@ -1,5 +1,6 @@
 import './App.css';
 import Pagination from './projects/Pagination/Pagination';
+import ProgressBar from './projects/ProgreesBar/ProgressBar';
 // import Timer from './projects/Timer/Timer';
 // import Weather from './projects/Weather_App/Weather';
 // import { WeatherProvider } from './projects/Weather_App/context/WeatherContext';
@@ -13,7 +14,8 @@ function App() {
         <Weather />
       </WeatherProvider> */}
       {/* <Timer/> */}
-      <Pagination/>
+      {/* <Pagination/> */}
+      <ProgressBar/>
     </div>
   );
 }
