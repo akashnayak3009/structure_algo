@@ -5,7 +5,8 @@ import './App.css';
 // import Weather from './projects/Weather_App/Weather';
 // import { WeatherProvider } from './projects/Weather_App/context/WeatherContext';
 // import TicToe from './projects/TicTacToe/TicToe';
-import Bmi from './projects/Bmi/Bmi.jsx'
+// import Bmi from './projects/Bmi/Bmi.jsx'
+import Translate from './projects/Translate_app/Translate';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Timer/> */}
       {/* <Pagination/> */}
       {/* <ProgressBar/> */}
-      <Bmi/>
+      {/* <Bmi/> */}
+      <Translate/>
     </div>
   );
 }
