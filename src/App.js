@@ -1,4 +1,5 @@
 import './App.css';
+import File from './projects/FileExplorer/File';
 // import Pagination from './projects/Pagination/Pagination';
 // import ProgressBar from './projects/ProgreesBar/ProgressBar';
 // import Timer from './projects/Timer/Timer';
@@ -6,7 +7,7 @@ import './App.css';
 // import { WeatherProvider } from './projects/Weather_App/context/WeatherContext';
 // import TicToe from './projects/TicTacToe/TicToe';
 // import Bmi from './projects/Bmi/Bmi.jsx'
-import Translate from './projects/Translate_app/Translate';
+// import Translate from './projects/Translate_app/Translate';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <Pagination/> */}
       {/* <ProgressBar/> */}
       {/* <Bmi/> */}
-      <Translate/>
+      {/* <Translate/> */}
+      <File/>
     </div>
   );
 }
