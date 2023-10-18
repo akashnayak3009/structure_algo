@@ -1,5 +1,6 @@
 import './App.css';
 import File from './projects/FileExplorer/File';
+import Verify from './projects/VerifyOtp/VerifyOtp';
 // import Pagination from './projects/Pagination/Pagination';
 // import ProgressBar from './projects/ProgreesBar/ProgressBar';
 // import Timer from './projects/Timer/Timer';
@@ -21,7 +22,7 @@ function App() {
       {/* <ProgressBar/> */}
       {/* <Bmi/> */}
       {/* <Translate/> */}
-      <File/>
+      <Verify/>
     </div>
   );
 }
