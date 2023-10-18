@@ -7,10 +7,6 @@ import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 
 const Verify = () => {
 
-
-  const [otp, setOtp] = useState();
-
-
   useEffect(() => {
     window.recaptchaVerifier = new RecaptchaVerifier( auth,
         "recaptcha-container", {
@@ -23,10 +19,12 @@ const Verify = () => {
     );
 }, []);
 
+
 const loginSubmit = (e) => {
     e.preventDefault();
 
-    let phone_number = e.target.mobile.value;
+    let phone_number = "+91" +e.target.mobile.value;
+
     const appVerifier = window.recaptchaVerifier;
 
     
@@ -58,13 +56,8 @@ const otpSubmit = (e) => {
            console.log("couldn't sign in");
         });
 };
-const [user, setUser] = useState([]);
 
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        setUser(user);
-    }
-});
+
 
   return (
     <div className="verify-otp-container">
@@ -72,7 +65,7 @@ auth.onAuthStateChanged((user) => {
        <h2>Login Form</h2>
          <form id="loginForm" onSubmit={loginSubmit}>
            <div id="sign-in-button"></div>
-           <input type="text" name="mobile" placeholder="Mobile number" required/>
+           <input type="text" id="mobile" placeholder="Mobile number" required/>
            <button type="submit">Submit</button>
          </form>
          <div id="recaptcha-container"></div>
